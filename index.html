@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/vapor/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row my-4 row-gap-3">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">¿Cuál es tu nombre?</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre(s):</label>
+                                <input type="text" class="form-control" id="nombre"
+                                    aria-describedby="Ingresa tu nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="apellidoPaterno" class="form-label">Apellido Paterno:</label>
+                                <input type="text" class="form-control" id="apellidoPaterno">
+                            </div>
+                            <div class="mb-3">
+                                <label for="apellidoMaterno" class="form-label">Apellido Materno:</label>
+                                <input type="text" class="form-control" id="apellidoMaterno">
+                            </div>
+                        </form>
+                        <div class="bg-secondary rounded">
+                            <p id="pNombre" class="text-dark m-2"></p>
+                            <p id="pApellidoP" class="text-dark m-2"></p>
+                            <p id="pApellidoM" class="text-dark m-2"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Datos de contacto</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo Electrónico:</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="Ingresa tu email">
+                            </div>
+                            <div>
+                                <label for="numero" class="form-label">Número de teléfono:</label>
+                                <input type="number" class="form-control" id="numero">
+                            </div>
+                            <div class="form-text mb-3">Tus datos no se compartirán con nadie más.</div>
+                        </form>
+                        <div class="bg-secondary rounded">
+                            <p id="pEmail" class="m-2 text-dark"></p>
+                            <p id="pNumero" class="m-2 text-dark"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">¿Cuál es tu fecha de nacimiento?</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="dia" class="form-label">Fecha:</label>
+                                <input type="date" class="form-control" id="fecha"
+                                    aria-describedby="Ingresa tu fecha de nacimiento">
+                            </div>
+                        </form>
+                        <div class="bg-secondary rounded">
+                            <p id="pFecha" class="m-2 text-dark"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-grid col-6 mx-auto">
+                    <button class="btn btn-dark" type="button" id="iniciar">Iniciar</button>
+                    <span class="text-danger" id="alert"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8 mx-auto">
+                    <div class="rounded" style="background-color: #250d49;">
+                        <h5 class="ms-2 text-primary" id="tituloDatos"></h5>
+                        <ul class="list-unstyled">
+                            <li class="ms-3" id="datosNombre"></li>
+                            <li class="ms-3" id="datosApellidoP"></li>
+                            <li class="ms-3" id="datosApellidoM"></li>
+                        </ul>
+
+                        <h5 class="ms-2 text-primary" id="tituloContacto"></h5>
+                        <ul class="list-unstyled">
+                            <li class="ms-3" id="datosEmail"></li>
+                            <li class="ms-3" id="datosNumero"></li>
+                        </ul>
+
+                        <h5 class="ms-2 text-primary" id="tituloFecha"></h5>
+                        <ul class="list-unstyled">
+                            <li class="ms-3" id="datosFecha"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
